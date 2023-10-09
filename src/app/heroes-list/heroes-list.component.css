@@ -1,0 +1,137 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 30em;
+}
+.heroes li a{
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    margin: .5em;
+    padding: 0;
+    height: auto;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.025);
+}
+.heroes li.selected:hover a{
+    background-color: #121212;
+}
+.heroes li:hover a {
+    background-color: rgba(255,255,255,0.05);
+}
+.heroes li a .content {
+    padding: .7em;
+    font-weight: 300;
+}
+.heroes li a .content div {
+    margin: .7em;
+    background: rgba(1,50,32,.3);
+    border-radius: .2em;
+    padding: .3em;
+    text-align: center;
+}
+.heroes li a .content div:first-child {
+    font-size: 1.8em !important;
+    border: none;
+    background: #121212;
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: .2em;
+    margin: 0 0 .4em 0;
+}
+.heroes .badge {
+    display: initial;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(178,34,34);
+    line-height: 1em;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: auto;
+    border-radius: 4px 0 0 4px;
+}
+
+img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.vilains-border {
+    border-color: rgba(1,50,32,.9) !important;
+    color: #FFF;
+}
+
+.vilains-background {
+    background-color: rgb(1,50,32) !important;
+}
+
+.special {
+    background-color: #121212 !important;
+    border: 1px solid;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.special_green {
+    color: rgb(0, 204, 0);
+}
+.special_gold {
+    color: rgb(212, 175, 55);
+}
+.special_orange {
+    color: rgb(255, 153, 51);
+}
+.special_blue {
+    color: rgb(51, 153, 255);
+}
+.special_red {
+    color: rgb(230, 46, 0);
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+input {
+    color: inherit;
+    display: block;
+    width: 100%;
+    margin: .4em 0;
+    font-size: 1.2em;
+    background: 0;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.1);
+}
+
+button {
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    border: 1px solid;
+    padding: .6em;
+    font-size: 1em;
+}
+button:hover {
+    background: #F1F1F1;
+    color: #121212;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

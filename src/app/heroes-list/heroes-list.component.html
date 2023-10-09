@@ -1,0 +1,24 @@
+<ul class='heroes'>
+  <h2>Best Heroes Forever</h2>
+  <li *ngFor="let hero of heroes; let i = index">
+    <a>
+      <span class="badge vilains-background">{{ i + 1 }}</span>
+      <img src="{{ hero.img }}" />
+      <span class="content">
+        <div class="vilains-border">{{ hero.name}} </div>
+        <div *ngFor="let power of hero.powers">{{ power }}</div>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a>
+      <span class="badge vilains-background">*</span>
+      <span class="content">
+        <label for="nameHero">Nom de votre Héros <input id="nameHero" type="text" name="nameHero" [(ngModel)]="nameHero"></label>
+        <label for="powers">Les superpouvoirs séparées par un ; <input id="powers" type="text" name="powers" [(ngModel)]="powers"></label>
+        <label for="img">Lien vers une image du profil de l'héro <input id="img" type="text" name="img" [(ngModel)]="img"></label>
+        <button (click)="addHero()">Ajouter un héros</button>
+      </span>
+    </a>
+  </li>
+</ul>

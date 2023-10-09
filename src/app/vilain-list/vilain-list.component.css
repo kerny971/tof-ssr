@@ -1,0 +1,147 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+}
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 30em;
+}
+.heroes li a {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgba(255,255,255,.01);
+    margin: .5em;
+    padding: 0;
+    height: auto;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.heroes li a.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+}
+.heroes li a:hover {
+    background-color: #121212;
+}
+.heroes li a .content {
+    padding: .7em;
+    text-align: right;
+}
+
+.heroes li a .content div {
+    margin-bottom: 1em;
+    background: rgba(178,34,34,.6);
+    padding: .2em;
+    border-radius: .2em;
+    text-align: center;
+}
+.heroes li a .content div:first-child {
+    margin-bottom: .5em;
+    font-size: 1.8em !important;
+    background: #121212;
+    display: block;
+    text-transform: uppercase;
+}
+.heroes .badge {
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(178,34,34);
+    line-height: 1em;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: auto;
+}
+
+img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.vilains-border {
+    border-color: rgba(178,34,34,0.2) !important;
+    color: rgba(178,34,34,1)
+}
+
+.vilains-background {
+    background-color: rgb(178,34,34) !important;
+}
+
+.special {
+    background-color: #121212 !important;
+    border: 1px solid;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.special_green {
+    color: rgb(0, 204, 0);
+}
+.special_gold {
+    color: rgb(212, 175, 55);
+}
+.special_orange {
+    color: rgb(255, 153, 51);
+}
+.special_blue {
+    color: rgb(51, 153, 255);
+}
+.special_red {
+    color: rgb(230, 46, 0);
+}
+.special_white {
+    color: rgb(255,255,255);
+}
+
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+input {
+    color: inherit;
+    display: block;
+    width: 100%;
+    margin: .4em 0;
+    font-size: 1.2em;
+    background: 0;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.1);
+}
+
+button {
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    border: 1px solid;
+    padding: .6em;
+    font-size: 1em;
+}
+button:hover {
+    background: #F1F1F1;
+    color: #121212;
+}
+.heroes li:last-child a{
+    justify-content: start;
+}
+.heroes li:last-child a .content {
+    text-align: left;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
